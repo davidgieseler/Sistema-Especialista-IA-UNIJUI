@@ -49,13 +49,13 @@ REGRAS_DIAGNOSTICO: List[RegraCondicao] = [
     RegraCondicao(
         nome="Resfriado Comum",
         evidencias=dict(coriza=1.5, espirros=1.2, dor_de_garganta=1.0, tosse=0.8, dor_de_cabeca=0.4, fadiga=0.6),
-        pontuacao_base=0.2,
+        pontuacao_base=0.3,
         conselho="Mantenha-se hidratado, descanse e use analgésicos leves. Procure um médico se os sintomas piorarem ou durarem mais de 10 dias."
     ),
     RegraCondicao(
         nome="Gripe (Influenza)",
         evidencias=dict(febre=1.8, dor_muscular=1.5, fadiga=1.2, dor_de_cabeca=0.8, tosse=0.8, dor_de_garganta=0.5),
-        pontuacao_base=0.3,
+        pontuacao_base=0.2,
         conselho="Repouso, hidratação e antitérmicos. Procure um serviço de saúde se sentir falta de ar, dor no peito ou confusão mental."
     ),
     RegraCondicao(
